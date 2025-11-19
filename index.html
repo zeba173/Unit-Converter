@@ -17,27 +17,21 @@
         <section>
             <h2>Convert Units</h2>
             <div>
-                <label for="category">Category</label>
-                <select name="ctg" id="category">
-                    <option value="length">Length</option>
-                    <option value="weight">Weight</option>
-                    <option value="volume">Volume</option>
-                    <option value="temperature">Temperature</option>
-                    <option value="area">Area</option>
-                </select>
+                <input type="text" id="input-el">
+                <button type="button" onclick="unitConverter()">Convert</button>
             </div>
             <div>
-                <label for="value">Value</label>
-                <input type="number" id="value" inputmode="decimal" placeholder="Enter number" value="1"/>
-            </div>
+                <p>Length (Meter/Feet)</p>
+                <p id="length"></p>
+            </div>     
             <div>
-                <label for="fromUnit">From</label>
-                <select id="fromUnit"></select>
-            </div>
+                <p>Volume (Liters/Gallons)</p>
+                <p id="volume"></p>
+            </div> 
             <div>
-                <label for="toUnit">To</label>
-                <select id="toUnit"></select>
-            </div>
+                <p>Mass (Kilograms/Pounds)</p>
+                <p id="mass"></p>
+            </div>       
         </section>
     </div>
     <script src="script.js"></script>
